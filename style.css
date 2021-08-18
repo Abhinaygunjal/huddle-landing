@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+
+body{
+background-image: url("./images/bg-desktop.svg");
+background-color: hsl(257, 40%, 49%);
+background-size: 100% auto;
+background-repeat: no-repeat;
+color:white;
+
+padding:4%;
+}
+
+.logo{
+    width:200px;
+}
+
+.card{
+    margin-top: 4rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.image{
+    display: inline-block;    
+    margin: 0 auto;
+}
+
+.content{
+    margin-left: 10rem;
+    
+}
+.main{
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+}
+
+.para{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 1.7px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.register{
+    background-color: white;
+    color:hsl(257, 40%, 49%);
+    margin-top: 40px;
+    border:none;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    padding:20px 100px;
+    border-radius: 40px 40px;
+    box-shadow:2px 4px 10px rgb(200, 142, 255);
+}
+
+.register:hover{
+background-color: hsl(300, 69%, 71%);
+transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s ;
+color:white;
+}
+
+.icons{
+    margin-top: 70px;
+float:right;
+}
+
+.child{
+    border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+    margin-left:10px;
+    padding:10px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+.fchild{
+    border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+    margin-left: 10px;
+    padding:10px  15px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+.child:hover{
+    color:hsl(300, 69%, 71%);
+    transition: 0.5s;
+}
+
+.fchild:hover{
+    color:hsl(300, 69%, 71%);
+    transition: 0.5s;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    body{
+        background-image: url('./images/bg-mobile.svg');
+        background-repeat: no-repeat;
+    margin: 2.5rem 2rem;
+  }
+  .card {
+    flex-direction: column;
+    justify-content: space-between;
+  align-items: stretch;
+margin-right: 2rem;  }
+
+  .image {
+    max-width: 100%;
+    min-height: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .main {
+
+    text-align: center;
+  }
+
+  .main> .para {
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .icons{
+    float: inline-end;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 851px) {
+  .image{
+    flex: 2;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+  }
+  .main{
+    flex-grow: 1;
+  }
+
+}
+      
